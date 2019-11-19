@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendor/jquery-3.4.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Server</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget App</h1>
+        <div id="inputFields">
+            Item:
+            <input type="text" name="Item"></input><br>
+            Quantity:
+            <input type="text" name="Quantity"></input><br>
+            Cost:
+            <input type="text" name="Cost"></input><br>
+            <button id="submitBtn">Submit</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="table">
+        <table>
+            <thead>
+                <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableDisplay">
+
+            </tbody>
+           
+            </div>
+    </div>
+    
+</body>
+</html>
