@@ -8,25 +8,25 @@
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Server</title>
+    <title>Budget App</title>
 </head>
 <body>
     <div class="container">
         <h1>Budget App</h1>
         <div id="inputFields">
             Item:
-            <input type="text" name="Item"></input><br>
+            <input type="text" name="Item" id="itemNameIn"></input><br>
             Quantity:
-            <input type="text" name="Quantity"></input><br>
+            <input type="text" name="Quantity" id="itemQtyIn"></input><br>
             Cost:
-            <input type="text" name="Cost"></input><br>
+            <input type="text" name="Cost" id="itemCostIn"></input><br>
             <button id="submitBtn">Submit</button>
         </div>
         <br>
         <br>
         <br>
         <div id="table">
-        <table>
+        <table id="itemsTable">
             <thead>
                 <tr>
                 <th scope="col">Item</th>
@@ -35,9 +35,7 @@
                 <th scope="col">Delete</th>
                 </tr>
             </thead>
-            <tbody id="tableDisplay">
-
-            </tbody>
+        </table>
            
             </div>
     </div>
