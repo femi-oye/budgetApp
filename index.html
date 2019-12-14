@@ -17,9 +17,9 @@
             Item:
             <input type="text" name="Item" id="itemNameIn"></input><br>
             Quantity:
-            <input type="text" name="Quantity" id="itemQtyIn"></input><br>
+            <input type="text" name="Quantity" id="itemQtyIn" oninput="calc()"></input><br>
             Cost:
-            <input type="text" name="Cost" id="itemCostIn"></input><br>
+            <input type="text" name="Cost" id="itemCostIn" oninput="calc()"></input><br>
             <button id="submitBtn">Submit</button>
         </div>
         <br>
@@ -27,17 +27,22 @@
         <br>
         <div id="table">
         <table id="itemsTable">
+        	<h3 id="budgetAmount"></h3>
             <thead>
                 <tr>
                 <th scope="col">Item</th>
                 <th scope="col">Quantity</th>
-                <th scope="col">Cost</th>
+                <th scope="col">Item Cost</th>
+                <th scope="col">Item Total</th>
                 <th scope="col">Delete</th>
                 </tr>
             </thead>
-        </table>
-           
+            <div id="result">
+
             </div>
+        </table>
+            </div>
+            
     </div>
     
 </body>
